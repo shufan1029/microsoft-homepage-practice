@@ -173,6 +173,7 @@ body {
     #menu-mobi {
         display: flex;
         gap: 20px;
+        padding-top: 14px;
     }
     
 }
@@ -199,30 +200,41 @@ body {
     }
 }
 
+.swiper-slide {
+    padding: 0 5%;
+}
 
 #carousel {
     position: relative;
 }
 
-#carousel-info {
+.carousel-info {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     margin-left: 80px;
 }
 
-#carousel-info>h1 {
+.carousel-info>h1 {
     font-size: 34px;
-    font-weight: 500;
     margin-top: 0;
     margin-bottom: 10px;
 }
 
-#carousel-info>p {
+.laptop-go>h1 {
+    font-weight: 500;
+}
+
+.surface-go-2>h1 {
+    font-weight: 600;
+}
+
+
+.carousel-info>p {
     margin-bottom: 25px;
 }
 
-#carousel-info>p,.buy-now-btn ,#highlight-info>p {
+.carousel-info>p,.buy-now-btn ,#highlight-info>p {
     font-size: 15px;
 }
 
@@ -252,6 +264,16 @@ body {
 .buy-now-btn:hover>i {
     padding-left: 15px;
 }
+
+
+.swiper-button-prev {
+    margin-left: 5%;
+}
+
+.swiper-button-next {
+    margin-right: 5%;
+}
+
 
 
 .onestore {
@@ -389,6 +411,16 @@ body {
     header .container , #carousel .container , #highlight .container {
         padding: 0;
     }
+    .swiper-slide {
+        padding:unset;
+    }
+    .swiper-button-prev {
+        margin-left: 0;
+    }
+    
+    .swiper-button-next {
+        margin-right: 0;
+    }
     #function-box {
         padding: 0 24px;
     }
@@ -522,7 +554,7 @@ body {
     #carousel {
         background-color: #E6E6E6;
     }
-    #carousel-info {
+    .carousel-info {
         position: relative;
         top: unset;
         transform: unset;
@@ -532,7 +564,7 @@ body {
         text-align: center;
     }
     
-    #carousel-info>h1 {
+    .carousel-info>h1 {
         font-size: 20px;
     }
     #carousel p {
@@ -541,7 +573,7 @@ body {
     #highlight {
         background-color: #E6E6E6;
     }
-    #highlight-info {
+    .highlight-info {
         position: relative;
         top: unset;
         transform: unset;
@@ -553,7 +585,7 @@ body {
     #highlight p {
         width: auto;
     }
-    #highlight-info>h2 {
+    .highlight-info>h2 {
         font-size: 20px;
     }
     .buy-now-btn {

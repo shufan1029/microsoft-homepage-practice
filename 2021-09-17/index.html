@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
 
 </head>
 
@@ -121,22 +122,51 @@
         
 
         <div id="carousel">
-            <div class="container">
-                <picture>
-                    <source srcset="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4G1h6?ver=151f&q=0&m=8&h=609&w=1083&b=%23FFFFFFFF&l=f&x=497&y=139&s=1623&d=913&aim=true" media="(max-width:1084px)">
-                    <img src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4G1h6?ver=151f&q=0&m=8&h=600&w=1600&b=%23FFFFFFFF&l=f&x=0&y=198&s=2120&d=795&aim=true" alt=""width="100%">
-                </picture>
-                <div id="carousel-info">
-                    <h1>Surface Laptop Go</h1>
-                    <p>運用我們所推出最輕巧的surface筆記型電腦，善加利用每一天</p>
-                    <a href="">
-                        <div class="buy-now-btn">
-                            <span>立即選購</span>
-                            <i class="fas fa-angle-right"></i> 
+            <div class="container swiper">
+                    <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                      <!-- Slides -->
+                            <div class="swiper-slide">
+                                <picture>
+                                    <source srcset="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4G1h6?ver=151f&q=0&m=8&h=609&w=1083&b=%23FFFFFFFF&l=f&x=497&y=139&s=1623&d=913&aim=true" media="(max-width:1084px)">
+                                    <img src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4G1h6?ver=151f&q=0&m=8&h=600&w=1600&b=%23FFFFFFFF&l=f&x=0&y=198&s=2120&d=795&aim=true" alt=""width="100%">
+                                </picture>
+                                <div class="carousel-info laptop-go">
+                                    <h1>Surface Laptop Go</h1>
+                                    <p>運用我們所推出最輕巧的surface筆記型電腦，善加利用每一天</p>
+                                    <a href="">
+                                        <div class="buy-now-btn">
+                                            <span>立即選購</span>
+                                            <i class="fas fa-angle-right"></i> 
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <picture>
+                                    <source srcset="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4u5ko?ver=9fb2&amp;q=0&amp;m=8&amp;h=609&amp;w=1083&amp;b=%23FFFFFFFF&amp;l=f&amp;x=4&amp;y=0&amp;s=2116&amp;d=1190&amp;aim=true" media="(max-width:1084px)">
+                                    <img src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4u5ko?ver=9fb2&q=0&m=8&h=600&w=1600&b=%23FFFFFFFF&l=f&x=0&y=169&s=2120&d=795&aim=true" alt=""width="100%">
+                                </picture>
+                                <div class="carousel-info surface-go-2">
+                                    <h1>隨身型動力</h1>
+                                    <p>Surface Go 2 結合了平板電腦的多功能性與筆記型電腦的可攜性，非常適合用來處理日常工作、家庭作業和玩樂</p>
+                                    <a href="">
+                                        <div class="buy-now-btn">
+                                            <span>立即選購</span>
+                                            <i class="fas fa-angle-right"></i> 
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
-                    </a>
-                </div>
-
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+                    
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                
             </div>       
         </div>
 
@@ -422,6 +452,27 @@
             </div>
         </div>
     </footer>
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+        });
+    </script>
 
 </body>
 </html>
